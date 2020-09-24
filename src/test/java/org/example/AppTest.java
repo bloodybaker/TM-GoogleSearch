@@ -21,6 +21,7 @@ public class AppTest
 
         GoogleResultOfSearch last = init.submit();
 
+
         assertEquals("Java",last.confirm());
     }
 }
