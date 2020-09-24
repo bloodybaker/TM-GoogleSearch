@@ -12,7 +12,7 @@ public class AppTest
     private WebDriver driver;
     @Test
     public void successfulResult(){
-        System.setProperty("webdriver.chrome.driver","./webdriver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","D:/webdriver/chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://google.com");
 
