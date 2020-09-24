@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 public class GoogleResultOfSearch extends PageObject {
-    @FindBy(how = How.XPATH, using = "/html/body/div[4]/form/div[2]/div[1]/div[2]/div/div[2]/input")
+    @FindBy(how = How.NAME, using = "q")
     private WebElement inputBox;
 
     public GoogleResultOfSearch(WebDriver driver) {
