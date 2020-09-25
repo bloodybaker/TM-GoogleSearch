@@ -1,10 +1,11 @@
 package org.example;
 
-import static org.junit.Assert.assertEquals;
 
-import org.junit.Test;
+import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import static org.testng.AssertJUnit.assertEquals;
 
 public class AppTest
 {
@@ -12,7 +13,7 @@ public class AppTest
     private WebDriver driver;
     @Test
     public void successfulResult(){
-        System.setProperty("webdriver.chrome.driver","D:/webdriver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","./webdriver/chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://google.com");
 
